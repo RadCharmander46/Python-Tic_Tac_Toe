@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5CE173E6-DBC5-4B59-9529-163FC409C806}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Year_14_CA_SSD</RootNamespace>
+    <AssemblyName>Year_14_CA_SSD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomerForm.Designer.cs">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarCalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarCalendarForm.Designer.cs">
+      <DependentUpon>CarCalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarReturnForm.Designer.cs">
+      <DependentUpon>CarReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDataForm.Designer.cs">
+      <DependentUpon>CustomerDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsTestDriveBookings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTestDriveBookings1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HomeScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeScreenForm.Designer.cs">
+      <DependentUpon>HomeScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginDataForm.Designer.cs">
+      <DependentUpon>LoginDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PickerForm.Designer.cs">
+      <DependentUpon>PickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestDriveBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestDriveBookingForm.Designer.cs">
+      <DependentUpon>TestDriveBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="PanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelForm.Designer.cs">
+      <DependentUpon>PanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQL_Operation.cs" />
+    <Compile Include="TestDriveBookingsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestDriveBookingsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TestDriveDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestDriveDataForm.Designer.cs">
+      <DependentUpon>TestDriveDataForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCustomerForm.resx">
+      <DependentUpon>AddCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarCalendarForm.resx">
+      <DependentUpon>CarCalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarReturnForm.resx">
+      <DependentUpon>CarReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeScreenForm.resx">
+      <DependentUpon>HomeScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDataForm.resx">
+      <DependentUpon>LoginDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelForm.resx">
+      <DependentUpon>PanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickerForm.resx">
+      <DependentUpon>PickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestDriveBookingForm.resx">
+      <DependentUpon>TestDriveBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestDriveBookingsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TestDriveBookingsReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestDriveDataForm.resx">
+      <DependentUpon>TestDriveDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dsTestDriveBookings1.xsc">
+      <DependentUpon>dsTestDriveBookings1.xsd</DependentUpon>
+    </None>
+    <None Include="dsTestDriveBookings1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTestDriveBookings1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsTestDriveBookings1.xss">
+      <DependentUpon>dsTestDriveBookings1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyDatabase.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MyDatabase_log.ldf">
+      <DependentUpon>MyDatabase.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="resources\search icon.png" />
+    <None Include="resources\return car.png" />
+    <None Include="resources\show password.png" />
+    <None Include="resources\arrow.png" />
+    <None Include="resources\drop down.png" />
+    <None Include="resources\login.png" />
+    <None Include="resources\report.png" />
+    <None Include="resources\database.png" />
+    <None Include="resources\calender.png" />
+    <None Include="resources\car service.png" />
+    <None Include="resources\test drive.png" />
+    <None Include="resources\customer.png" />
+    <None Include="resources\staff.png" />
+    <None Include="resources\moving car.png" />
+    <None Include="resources\selling car.png" />
+    <None Include="resources\adding car.png" />
+    <None Include="resources\grey thin refresh.png" />
+    <None Include="resources\grey refresh.png" />
+    <None Include="resources\grey pencil.png" />
+    <None Include="resources\grey delete.png" />
+    <None Include="resources\grey plus.png" />
+    <None Include="resources\minus.png" />
+    <None Include="resources\plus.png" />
+    <None Include="resources\plus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

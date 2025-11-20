@@ -1,0 +1,142 @@
+﻿
+namespace Year_14_CA_SSD
+{
+    partial class LoginForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.Username_TextBox = new System.Windows.Forms.TextBox();
+            this.Password_TextBox = new System.Windows.Forms.TextBox();
+            this.Title_Label = new System.Windows.Forms.Label();
+            this.Username_Label = new System.Windows.Forms.Label();
+            this.Password_Label = new System.Windows.Forms.Label();
+            this.Login_Button = new System.Windows.Forms.Button();
+            this.Show_Password_Button = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Show_Password_Button)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // Username_TextBox
+            // 
+            this.Username_TextBox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username_TextBox.Location = new System.Drawing.Point(386, 295);
+            this.Username_TextBox.Name = "Username_TextBox";
+            this.Username_TextBox.Size = new System.Drawing.Size(532, 39);
+            this.Username_TextBox.TabIndex = 1;
+            // 
+            // Password_TextBox
+            // 
+            this.Password_TextBox.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_TextBox.Location = new System.Drawing.Point(386, 372);
+            this.Password_TextBox.Name = "Password_TextBox";
+            this.Password_TextBox.Size = new System.Drawing.Size(532, 39);
+            this.Password_TextBox.TabIndex = 2;
+            this.Password_TextBox.UseSystemPasswordChar = true;
+            // 
+            // Title_Label
+            // 
+            this.Title_Label.Font = new System.Drawing.Font("Tahoma", 62.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title_Label.Location = new System.Drawing.Point(327, 58);
+            this.Title_Label.Name = "Title_Label";
+            this.Title_Label.Size = new System.Drawing.Size(532, 206);
+            this.Title_Label.TabIndex = 3;
+            this.Title_Label.Text = "Doherty Cars";
+            this.Title_Label.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Username_Label
+            // 
+            this.Username_Label.AutoSize = true;
+            this.Username_Label.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username_Label.Location = new System.Drawing.Point(258, 298);
+            this.Username_Label.Name = "Username_Label";
+            this.Username_Label.Size = new System.Drawing.Size(122, 32);
+            this.Username_Label.TabIndex = 4;
+            this.Username_Label.Text = "Username";
+            // 
+            // Password_Label
+            // 
+            this.Password_Label.AutoSize = true;
+            this.Password_Label.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_Label.Location = new System.Drawing.Point(268, 375);
+            this.Password_Label.Name = "Password_Label";
+            this.Password_Label.Size = new System.Drawing.Size(112, 32);
+            this.Password_Label.TabIndex = 5;
+            this.Password_Label.Text = "Password";
+            // 
+            // Login_Button
+            // 
+            this.Login_Button.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_Button.Location = new System.Drawing.Point(512, 478);
+            this.Login_Button.Name = "Login_Button";
+            this.Login_Button.Size = new System.Drawing.Size(162, 72);
+            this.Login_Button.TabIndex = 6;
+            this.Login_Button.Text = "Login";
+            this.Login_Button.UseVisualStyleBackColor = true;
+            this.Login_Button.Click += new System.EventHandler(this.Login_Button_Click);
+            // 
+            // Show_Password_Button
+            // 
+            this.Show_Password_Button.BackColor = System.Drawing.Color.White;
+            this.Show_Password_Button.Image = global::Year_14_CA_SSD.Properties.Resources.show_password;
+            this.Show_Password_Button.Location = new System.Drawing.Point(878, 374);
+            this.Show_Password_Button.Name = "Show_Password_Button";
+            this.Show_Password_Button.Size = new System.Drawing.Size(38, 34);
+            this.Show_Password_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Show_Password_Button.TabIndex = 7;
+            this.Show_Password_Button.TabStop = false;
+            this.Show_Password_Button.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Show_Password_Button_MouseDown);
+            this.Show_Password_Button.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Show_Password_Button_MouseUp);
+            // 
+            // LoginForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1187, 596);
+            this.Controls.Add(this.Show_Password_Button);
+            this.Controls.Add(this.Login_Button);
+            this.Controls.Add(this.Password_Label);
+            this.Controls.Add(this.Username_Label);
+            this.Controls.Add(this.Title_Label);
+            this.Controls.Add(this.Password_TextBox);
+            this.Controls.Add(this.Username_TextBox);
+            this.Name = "LoginForm";
+            this.Text = "LoginForm";
+            ((System.ComponentModel.ISupportInitialize)(this.Show_Password_Button)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+        private System.Windows.Forms.TextBox Username_TextBox;
+        private System.Windows.Forms.TextBox Password_TextBox;
+        private System.Windows.Forms.Label Title_Label;
+        private System.Windows.Forms.Label Username_Label;
+        private System.Windows.Forms.Label Password_Label;
+        private System.Windows.Forms.Button Login_Button;
+        private System.Windows.Forms.PictureBox Show_Password_Button;
+    }
+}
